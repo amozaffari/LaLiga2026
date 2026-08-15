@@ -1,0 +1,21 @@
+date,team,exp_points,exp_gd,p_champion,p_top4,p_top6,p_relegation,median_position,source
+2026-08-15,Barcelona,75.6,35.6,0.534,0.9722,0.9928,0.0,1,market_implied
+2026-08-15,Real Madrid,73.6,32.4,0.4,0.9508,0.9836,0.0001,2,market_implied
+2026-08-15,Atlético Madrid,61.4,13.6,0.0355,0.55,0.7384,0.0055,4,market_implied
+2026-08-15,Valencia,55.0,4.2,0.0065,0.2351,0.4294,0.0391,7,market_implied
+2026-08-15,Real Betis,54.2,2.9,0.0064,0.2019,0.3824,0.0524,8,market_implied
+2026-08-15,Celta Vigo,53.8,2.5,0.0049,0.195,0.369,0.0544,8,market_implied
+2026-08-15,Villarreal,53.5,1.9,0.0045,0.1884,0.3601,0.0593,8,market_implied
+2026-08-15,Getafe,51.2,-1.5,0.002,0.112,0.255,0.0968,10,market_implied
+2026-08-15,Levante,50.3,-2.8,0.0009,0.0986,0.2138,0.1163,11,market_implied
+2026-08-15,Rayo Vallecano,49.7,-3.7,0.001,0.0844,0.1991,0.1334,11,market_implied
+2026-08-15,Real Sociedad,48.9,-4.9,0.0009,0.0693,0.1686,0.1592,12,market_implied
+2026-08-15,Alavés,47.8,-6.7,0.0001,0.0571,0.1354,0.1924,13,market_implied
+2026-08-15,Elche,47.8,-6.6,0.0007,0.0551,0.1359,0.1961,13,market_implied
+2026-08-15,Athletic Club,47.2,-7.3,0.001,0.0457,0.1171,0.2171,13,market_implied
+2026-08-15,Málaga,46.5,-8.5,0.0008,0.0395,0.1068,0.2439,14,market_implied
+2026-08-15,Racing Santander,46.1,-9.2,0.0002,0.0334,0.0946,0.259,14,market_implied
+2026-08-15,Espanyol,45.8,-9.6,0.0004,0.0338,0.0937,0.2718,14,market_implied
+2026-08-15,Sevilla,45.7,-9.8,0.0001,0.0295,0.086,0.2706,15,market_implied
+2026-08-15,Osasuna,45.6,-9.9,0.0001,0.0292,0.0839,0.272,15,market_implied
+2026-08-15,Deportivo,43.8,-12.6,0.0,0.019,0.0544,0.3606,16,market_implied
