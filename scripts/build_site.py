@@ -151,8 +151,11 @@ def history_section() -> str:
 
 def main():
     def read_pref(preferred, fallback):
-        p = OUT_DIR / preferred
-        return pd.read_csv(p if p.exists() else OUT_DIR / fallback), p.exists()
+        # Market-calibrated file only if it is at least as fresh as the pure one.
+        p, alt = OUT_DIR / preferred, OUT_DIR / fallback
+        use = p.exists() and (not alt.exists()
+                              or p.stat().st_mtime >= alt.stat().st_mtime - 1)
+        return pd.read_csv(p if use else alt), use
 
     table, calibrated = read_pref("season_projection_market_implied.csv",
                                   "season_projection.csv")

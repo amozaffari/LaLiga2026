@@ -42,8 +42,10 @@ def style(ax, xgrid=False):
 def _read_with_fallback(preferred: str, fallback: str) -> pd.DataFrame:
     """Use market-calibrated output when present, else the pure-Elo file —
     so a Polymarket outage degrades the dashboard instead of breaking it."""
-    path = OUT_DIR / preferred
-    return pd.read_csv(path if path.exists() else OUT_DIR / fallback)
+    path, alt = OUT_DIR / preferred, OUT_DIR / fallback
+    use = path.exists() and (not alt.exists()
+                             or path.stat().st_mtime >= alt.stat().st_mtime - 1)
+    return pd.read_csv(path if use else alt)
 
 
 def main():

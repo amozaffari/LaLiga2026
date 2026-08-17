@@ -24,8 +24,13 @@ KEY_COLS = ["HomeTeam", "AwayTeam"]
 
 
 def _read_output(preferred: str, fallback: str) -> tuple[pd.DataFrame, bool]:
-    path = OUT_DIR / preferred
-    return pd.read_csv(path if path.exists() else OUT_DIR / fallback), path.exists()
+    """Read the market-calibrated output when it exists AND is at least as fresh
+    as the pure-Elo file; otherwise fall back. A calibration failure must not
+    resurrect a stale market-implied file from an earlier run."""
+    path, alt = OUT_DIR / preferred, OUT_DIR / fallback
+    use_pref = path.exists() and (not alt.exists()
+                                  or path.stat().st_mtime >= alt.stat().st_mtime - 1)
+    return pd.read_csv(path if use_pref else alt), use_pref
 
 
 def snapshot_projection(now: pd.Timestamp | None = None) -> bool:
@@ -54,8 +59,13 @@ def update_match_log(now: pd.Timestamp | None = None) -> pd.DataFrame:
     current["kickoff_utc"] = pd.to_datetime(current["kickoff_utc"], utc=True)
 
     if MATCH_LOG.exists():
-        log = pd.read_csv(MATCH_LOG)
+        # Text columns must be read as text: an all-empty "outcome" column
+        # would otherwise be inferred as float and refuse the later "H"/"D"/"A".
+        log = pd.read_csv(MATCH_LOG, dtype={"outcome": "string", "pred_date": "string",
+                                            "HomeTeam": "string", "AwayTeam": "string"})
         log["kickoff_utc"] = pd.to_datetime(log["kickoff_utc"], utc=True)
+        log["outcome"] = log["outcome"].astype(object)
+        log["pred_date"] = log["pred_date"].astype(object)
         log = log.set_index(KEY_COLS)
     else:
         log = pd.DataFrame(columns=["gameweek", "kickoff_utc", *PROB_COLS,
