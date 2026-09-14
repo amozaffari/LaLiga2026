@@ -1,0 +1,21 @@
+date,team,exp_points,exp_gd,p_champion,p_top4,p_top6,p_relegation,median_position,source
+2026-09-14,Barcelona,82.4,51.3,0.6874,0.9972,1.0,0.0,1,market_implied
+2026-09-14,Real Madrid,76.8,39.7,0.282,0.9844,0.9979,0.0,2,market_implied
+2026-09-14,Atlético Madrid,65.0,18.4,0.0202,0.7069,0.8886,0.0004,4,market_implied
+2026-09-14,Real Betis,62.0,9.3,0.0085,0.5462,0.7803,0.0017,4,market_implied
+2026-09-14,Villarreal,55.1,7.4,0.0009,0.1925,0.4447,0.0234,7,market_implied
+2026-09-14,Alavés,54.6,4.8,0.0006,0.1722,0.4233,0.0246,7,market_implied
+2026-09-14,Sevilla,50.8,-4.9,0.0,0.0711,0.2282,0.0618,10,market_implied
+2026-09-14,Rayo Vallecano,49.5,-5.5,0.0001,0.0556,0.1891,0.0996,11,market_implied
+2026-09-14,Levante,49.2,-3.9,0.0,0.0518,0.1701,0.1022,11,market_implied
+2026-09-14,Osasuna,48.9,-8.2,0.0001,0.0478,0.1521,0.1053,11,market_implied
+2026-09-14,Deportivo,48.4,-6.1,0.0002,0.0383,0.1449,0.1209,12,market_implied
+2026-09-14,Athletic Club,47.2,-6.5,0.0,0.0274,0.11,0.1575,13,market_implied
+2026-09-14,Real Sociedad,47.2,-10.4,0.0,0.0252,0.1098,0.1466,13,market_implied
+2026-09-14,Racing Santander,46.1,-9.5,0.0,0.0214,0.0833,0.1942,13,market_implied
+2026-09-14,Espanyol,45.6,-7.4,0.0,0.0181,0.0747,0.2069,14,market_implied
+2026-09-14,Getafe,45.5,-10.3,0.0,0.0176,0.0774,0.2182,14,market_implied
+2026-09-14,Valencia,43.9,-12.8,0.0,0.0119,0.051,0.2859,15,market_implied
+2026-09-14,Celta Vigo,43.1,-10.4,0.0,0.008,0.0376,0.3225,16,market_implied
+2026-09-14,Málaga,41.1,-16.8,0.0,0.0042,0.0218,0.4357,17,market_implied
+2026-09-14,Elche,40.1,-18.1,0.0,0.0022,0.0152,0.4926,17,market_implied
