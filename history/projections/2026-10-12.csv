@@ -1,0 +1,21 @@
+date,team,exp_points,exp_gd,p_champion,p_top4,p_top6,p_relegation,median_position,source
+2026-10-12,Barcelona,85.6,58.6,0.7993,0.9992,1.0,0.0,1,market_implied
+2026-10-12,Real Madrid,76.7,37.6,0.175,0.9848,0.998,0.0,2,market_implied
+2026-10-12,Atlético Madrid,67.5,20.9,0.0191,0.8136,0.9534,0.0,3,market_implied
+2026-10-12,Real Betis,65.1,12.3,0.0063,0.7064,0.9089,0.0003,4,market_implied
+2026-10-12,Villarreal,55.4,9.2,0.0002,0.1554,0.4756,0.0121,7,market_implied
+2026-10-12,Sevilla,51.9,-4.7,0.0,0.0669,0.2728,0.035,9,market_implied
+2026-10-12,Alavés,51.5,2.7,0.0001,0.0619,0.2589,0.045,9,market_implied
+2026-10-12,Rayo Vallecano,50.6,-4.6,0.0,0.0525,0.2327,0.0607,10,market_implied
+2026-10-12,Real Sociedad,50.5,-8.4,0.0,0.0442,0.2147,0.053,10,market_implied
+2026-10-12,Levante,48.4,-5.0,0.0,0.0281,0.1468,0.1087,11,market_implied
+2026-10-12,Athletic Club,46.8,-6.5,0.0,0.0169,0.099,0.1532,12,market_implied
+2026-10-12,Osasuna,46.8,-13.7,0.0,0.0163,0.0889,0.1455,12,market_implied
+2026-10-12,Getafe,45.6,-11.2,0.0,0.0113,0.0741,0.1866,13,market_implied
+2026-10-12,Deportivo,45.6,-7.6,0.0,0.0122,0.0699,0.1873,13,market_implied
+2026-10-12,Celta Vigo,44.3,-5.4,0.0,0.0074,0.0511,0.2294,14,market_implied
+2026-10-12,Racing Santander,44.2,-17.3,0.0,0.0073,0.0475,0.2426,14,market_implied
+2026-10-12,Valencia,44.2,-12.3,0.0,0.0079,0.0503,0.2495,14,market_implied
+2026-10-12,Espanyol,43.0,-9.6,0.0,0.0051,0.0337,0.2973,15,market_implied
+2026-10-12,Elche,40.8,-15.9,0.0,0.0017,0.0161,0.4268,17,market_implied
+2026-10-12,Málaga,38.4,-19.3,0.0,0.0009,0.0076,0.567,18,market_implied
